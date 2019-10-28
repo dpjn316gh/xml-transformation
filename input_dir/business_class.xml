@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crud>
+    <copyright/>
+    <import/>
+    <testing_functions>
+        <upper>IT SHOULD BE</upper>
+    </testing_functions>
+    <class>
+        <namespace>mycompany.org</namespace>
+        <description>
+            <name>Clase1</name>
+            <comment>
+    Comentario de la clase
+    Esta clase hace los siguiente
+            </comment>
+        </description>
+        <members>
+            <member scope="public" type="IList&lt;int&gt;" name="metodo1"/>
+        </members>
+    </class>
+</crud>

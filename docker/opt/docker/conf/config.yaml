@@ -1,0 +1,5 @@
+log_config_file: "{{opt_path}}/docker/conf/{{environment}}"
+logs_path: "{{app_path_folder}}/logs"
+stylesheet_path: "{{app_path_folder}}/stylesheet"
+output_dir: "{{app_path_folder}}/output_dir"
+input_dir: "{{app_path_folder}}/input_dir"

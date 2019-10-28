@@ -1,0 +1,3 @@
+environment: "linux-development"
+app_path_folder: "/home/jorge/PycharmProjects/xml-transformation"
+opt_path: "{{app_path_folder}}/docker/opt"
