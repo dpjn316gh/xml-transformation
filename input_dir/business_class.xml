@@ -5,10 +5,8 @@
     <testing_functions>
         <upper>IT SHOULD BE</upper>
     </testing_functions>
-    <class>
-        <namespace>mycompany.org</namespace>
+    <class name="Clase1" namespace="mycompany.org">
         <description>
-            <name>Clase1</name>
             <comment>
     Comentario de la clase
     Esta clase hace los siguiente
@@ -16,6 +14,7 @@
         </description>
         <members>
             <member scope="public" type="IList&lt;int&gt;" name="metodo1"/>
+            <member scope="public" type="IList&lt;int&gt;" name="metodo2"/>
         </members>
     </class>
 </crud>

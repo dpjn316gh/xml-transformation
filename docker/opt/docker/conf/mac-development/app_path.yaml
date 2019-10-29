@@ -1,0 +1,3 @@
+environment: "mac-development"
+app_path_folder: "/Users/jorgeporras/Documents/xml-transformation"
+opt_path: "{{app_path_folder}}/docker/opt"

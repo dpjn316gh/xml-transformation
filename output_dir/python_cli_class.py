@@ -1,23 +1,23 @@
+
 # --------------------------------------------------------------------
-# Copyleft (c) 2019
-# Author Jorge Porras<dpjn316@gmail.com>
+# Copyright (c) 2019 by PayU Latam
+# Project name: Project Name title
+# Author: Jorge D. Porras jorge.porras@payulatam.com
+# Author: Diego Chavez diego.chavez@payulatam.com
 # Version: 0.0.1
 # --------------------------------------------------------------------
-from argparse import ArgumentParser
+    
 
-from cli.app_context import AppContext
-from cli.config import Configuration
-from processor.xslt_processor import XsltProcessor
-from utils.logger_wrapper import Logger
+from argparse import ArgumentParser
 
 
 class CliApp:
     """
-    Represents a CLI application.
+    Represents the CLI interface of the application.
     """
 
     def __init__(self):
-        self.parser = ArgumentParser(description="XML Transformation", epilog='Enjoy the program! :)')
+        self.parser = ArgumentParser(description="Description of the application", epilog="Description of the application")
 
     def run(self) -> None:
         """ Entry point of the app
@@ -32,12 +32,6 @@ class CliApp:
         Logger.load_config(context.get_log_config_file())
         Logger.info("Loading XML transformation")
 
-        xml_file = f"{context.get_input_dir()}/cli-structure.xml"
-        xsl_file = f"{context.get_stylesheet_path()}/cli-structure.xsl"
-        output_file = f"{context.get_output_dir()}/cli-structure.txt"
-
-        XsltProcessor.transform(xml_file, xsl_file, output_file)
-
     def create_cli_interface(self) -> None:
         """
         Create the CLI interface.
@@ -45,4 +39,7 @@ class CliApp:
             None:
         """
         self.parser.add_argument('--version', action='version', version='0.0.1')
-        self.parser.add_argument('--config', type=str, required=True, help="yaml config file is required")
+        self.parser.add_argument('--config', type=str, required=True, help="config folder is required")
+
+
+    

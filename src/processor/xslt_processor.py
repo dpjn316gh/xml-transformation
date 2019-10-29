@@ -27,5 +27,8 @@ class XsltProcessor:
         xslt = etree.parse(xsl_filename)
         transform = XSLT(xslt)
         newdom = transform(dom)
+        newdom.write_output(output_filepath)
+        print(type(newdom))
+        print(dir(newdom))
         print(newdom)
 

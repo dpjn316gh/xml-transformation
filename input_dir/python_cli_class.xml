@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Project Name title" version="0.0.1">
+    <description>
+        <title>Description of the application</title>
+        <epilog>Epilog of the application</epilog>
+    </description>
+    <copyright/>
+    <authors>
+        <author name="Jorge D. Porras" email="jorge.porras@payulatam.com"/>
+        <author name="Diego Chavez" email="diego.chavez@payulatam.com"/>
+    </authors>
+    <company name="PayU Latam" year="2019"/>
+</project>
