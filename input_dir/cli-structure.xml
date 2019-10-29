@@ -2,13 +2,15 @@
 <project-structure>
     <root name="root-folder">
         <folder name="folder1"/>
-        <folder name="folder1"/>
+        <folder name="folder2"/>
         <file name="file1"/>
         <file name="file2"/>
         <folder name="folder3">
             <folder name="subfolder3">
-                <folder name="subfolder4"/>
-                <file name="file3"/>
+                <folder name="subfolder4">
+                    <folder name="subfolder5"></folder>
+                    <file name="file3"/>
+                </folder>
             </folder>
         </folder>
     </root>
